@@ -1,0 +1,1124 @@
+{
+  "errors": {
+    "1be3eb436d6acabf818d559db373d949": {
+      "log": [
+        "--PROCESS nna_compiler", 
+        "ERROR: (convert_input) Input has quantisation dtype #, but scale # zero point attribute is missing", 
+        "ERROR: (convertNode) Could not successfully convert NNVM node", 
+        "ERROR: (operator()) Could not convert NNVM node #", 
+        "ERROR: (Convert) Could not successfully convert all NNVM nodes", 
+        "ERROR: (imgdnnCreateNetworkFromIR) IMGDNN error while applying passes [InferShape, InferType, NNVM#IMG]", 
+        "ERROR: Could not create network from IR"
+      ], 
+      "plugin-id": "3c1e8c004cbbc9eca068f91e1dd0b293", 
+      "test-ids": [
+        "9f1dc0563cd2750ff6ed440448f57ce4"
+      ]
+    }, 
+    "2fc497c1737056236d0b18995aa0f729": {
+      "log": [
+        "--PROCESS tf_imgnnvm.py", 
+        "failed = convert_network(args.input, args.output_imgnnvm, args.ignore_incompatible, args.network_inputs_file, args.no_transforms, args.populate_shapes, args.verbose, args.tag_set, args.signature_def)", 
+        "Error(\"ERROR : Node '%s' required by '%s' has not processed. Is there a loop in the network?\"%(i, node.name))", 
+        "Error: ERROR : Node '#' required by '#' has not processed. Is there a loop in the network?"
+      ], 
+      "plugin-id": "0f81341d99792343c35d6f4ff00d9b94", 
+      "test-ids": [
+        "09768c7edc210d0d1b1be18702b271d7"
+      ]
+    }, 
+    "60a7065bef9100096bc8d595da832633": {
+      "log": [
+        "--PROCESS nna_compiler", 
+        "ERROR: (IMGConvInferType) Incompatible input types in node img_conv#: # vs #", 
+        "ERROR: (imgdnnGenerateMBS) Could not successfully apply passes [InferShape, TransposeElimination, InferShape, InferType, ImgInferTypes, ImgNnaRemoveCasts, InferShape, InferType, ImgInferTypes, ImgNnaCnnModelGen]", 
+        "ERROR: (imgdnnGenerateMBS) Error when creating imgdnn network binary", 
+        "ERROR: Could not generate MBS"
+      ], 
+      "plugin-id": "3c1e8c004cbbc9eca068f91e1dd0b293", 
+      "test-ids": [
+        "ba9116e5b4fdfd7714344cdcd0ea069f"
+      ]
+    }, 
+    "75d73d464ec3d2fd39a8493ba28a6d9c": {
+      "log": [
+        "--PROCESS vha_sim", 
+        "vha_sim: #@#:#: RA_Alloc: Assertion `#' failed.", 
+        "ERROR - Abort signal caught, error code: #"
+      ], 
+      "plugin-id": "6add8b0db942d2e9abc9e900dfb88e6a", 
+      "test-ids": [
+        "cddcb14a184bde12bebcbad5f8831cee", 
+        "a63c866786c58e31b00499d7ab09ba31"
+      ]
+    }, 
+    "ebe4dbf165e22a0d6bb2c66eb125fe8f": {
+      "log": [
+        "--PROCESS darknet_imgnnvm.py", 
+        "Error: cannot dereference null pointer from cdata 'float *'"
+      ], 
+      "plugin-id": "4528f59455bfe964b655c300e7d6f1ee", 
+      "test-ids": [
+        "7da5114dd7e1da2bd4a90fbad81665f4", 
+        "c11d32ac871c32fd27778ffbcf8e71c8", 
+        "771cf61ec0049f0257ff668f1001603c", 
+        "a1ddc2d21d32f1991caf73b17bd0cf3f", 
+        "17586ab5f37621daf6a9ad6744db2035", 
+        "52f32ab9f5992502b6989a8b27781cd3"
+      ]
+    }
+  }, 
+  "history": {
+    "fail": [
+      6, 
+      33, 
+      13, 
+      11, 
+      10, 
+      14, 
+      11, 
+      11
+    ], 
+    "new-errors": [], 
+    "new-fail": [], 
+    "new-pass": [], 
+    "pass": [
+      0, 
+      74, 
+      94, 
+      92, 
+      93, 
+      94, 
+      115, 
+      115
+    ], 
+    "timestamp": [
+      1592489170.163124, 
+      1592519328.994195, 
+      1592571263.240539, 
+      1592832774.109278, 
+      1592893488.420326, 
+      1592928489.714534, 
+      1593142423.142852, 
+      1593192915.734339
+    ]
+  }, 
+  "packages": {
+    "ARCHITECTURE_VERSION": "MAIN@5749746", 
+    "CSIM_LABEL": "SIM_AI_MAIN_28.3p.7500.1502.748", 
+    "FM_LABEL": "NNA_FM_MAIN.136", 
+    "FRAMEWORK": "nnatest", 
+    "FRAMEWORK_VERSION": "REL/SW2.6@5749182", 
+    "NCSDK_VERSION": "MAIN@5748885", 
+    "SW_VERSION": "REL_2.6@5749543"
+  }, 
+  "plugins": {
+    "090cee26f190bbb0c6a8e3b14417035c": {
+      "error-ids": [], 
+      "fail-count": 0, 
+      "name": "pp_imgnnvm", 
+      "pass-count": 1
+    }, 
+    "0b711a49a8b3c7206a9a77a026be9272": {
+      "error-ids": [], 
+      "fail-count": 0, 
+      "name": "json_patcher-mapcfg", 
+      "pass-count": 39
+    }, 
+    "0f81341d99792343c35d6f4ff00d9b94": {
+      "error-ids": [
+        "2fc497c1737056236d0b18995aa0f729"
+      ], 
+      "fail-count": 1, 
+      "name": "tf_imgnnvm", 
+      "pass-count": 76
+    }, 
+    "228c70bfc5589c58c044e03fff0e17eb": {
+      "error-ids": [], 
+      "fail-count": 0, 
+      "name": "legacy", 
+      "pass-count": 115
+    }, 
+    "31b5fa33071b58aedbe4ae576755ffc8": {
+      "error-ids": [], 
+      "fail-count": 0, 
+      "name": "tf_io_config_generator", 
+      "pass-count": 14
+    }, 
+    "3c1e8c004cbbc9eca068f91e1dd0b293": {
+      "error-ids": [
+        "60a7065bef9100096bc8d595da832633", 
+        "1be3eb436d6acabf818d559db373d949"
+      ], 
+      "fail-count": 2, 
+      "name": "nna_compiler", 
+      "pass-count": 117
+    }, 
+    "4528f59455bfe964b655c300e7d6f1ee": {
+      "error-ids": [
+        "ebe4dbf165e22a0d6bb2c66eb125fe8f"
+      ], 
+      "fail-count": 6, 
+      "name": "darknet_imgnnvm", 
+      "pass-count": 0
+    }, 
+    "578f5dc7a2eba3c46d3a57c5db292c28": {
+      "error-ids": [], 
+      "fail-count": 0, 
+      "name": "tflite_imgnnvm", 
+      "pass-count": 33
+    }, 
+    "65e739e70d718620e9aeb3bfe3bd0adc": {
+      "error-ids": [], 
+      "fail-count": 0, 
+      "name": "IMGIR_random_input_generator", 
+      "pass-count": 117
+    }, 
+    "6add8b0db942d2e9abc9e900dfb88e6a": {
+      "error-ids": [
+        "75d73d464ec3d2fd39a8493ba28a6d9c"
+      ], 
+      "fail-count": 2, 
+      "name": "vha_sim", 
+      "pass-count": 115
+    }, 
+    "6b9e7ee4b004f40d91fe6d095f062ce1": {
+      "error-ids": [], 
+      "fail-count": 0, 
+      "name": "nnvm_testbench", 
+      "pass-count": 117
+    }, 
+    "9f15bb1df6160a67c1601e39cbc18fd4": {
+      "error-ids": [], 
+      "fail-count": 0, 
+      "name": "graph_transform", 
+      "pass-count": 18
+    }, 
+    "c67b1b9182a27270c635ac256d23d2ad": {
+      "error-ids": [], 
+      "fail-count": 0, 
+      "name": "perf_tool", 
+      "pass-count": 115
+    }, 
+    "cff5497121104c2b8e0cb41ed2083a9b": {
+      "error-ids": [], 
+      "fail-count": 0, 
+      "name": "flow", 
+      "pass-count": 0
+    }, 
+    "d790a1e438594fe17b5352d90231b3b1": {
+      "error-ids": [], 
+      "fail-count": 0, 
+      "name": "onnx_imgnnvm", 
+      "pass-count": 9
+    }
+  }, 
+  "summary": {
+    "execution-time": {
+      "average": 1915.9548437311537, 
+      "historical-average": 2267.144221463207, 
+      "max": 13555.337151288986, 
+      "min": 6.812218427658081
+    }, 
+    "fail-count": 11, 
+    "name": "NNVM-TESTBENCH-12", 
+    "pass-count": 115, 
+    "timestamp": 1593192915.734339, 
+    "unknown-count": 0
+  }, 
+  "tests": {
+    "08d27c0b339ce7634e66b45863610538": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 909.9152219295502,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/271-tensorflowlite-srcnn_ai_benchmark_v3.0.2-bd8-crc_subset-deef0bf",
+      "name": "271-tensorflowlite-srcnn_ai_benchmark_v3.0.2-bd8-crc_subset-deef0bf",
+      "result": "PASS"
+    },
+    "08e8637a2b14477b9deba94798eecb0a": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 3499.349981069565,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/348-tensorflow-savedmodel-savedmodel_densenet201-bd8-crc_subset-efe39e2",
+      "name": "348-tensorflow-savedmodel-savedmodel_densenet201-bd8-crc_subset-efe39e2",
+      "result": "PASS"
+    },
+    "09768c7edc210d0d1b1be18702b271d7": {
+      "creation-date": 1592893488.420326,
+      "error-id": "2fc497c1737056236d0b18995aa0f729",
+      "execution-time": 18.53596782684326,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/2673-tensorflow-ssd_mobilenet_v1_coco_2018_01_28-bd8-crc_subset-0c049f8",
+      "name": "2673-tensorflow-ssd_mobilenet_v1_coco_2018_01_28-bd8-crc_subset-0c049f8",
+      "result": "FAIL"
+    },
+    "0a481aa4dff2c181dd916206e116693f": {
+      "creation-date": 1593142423.142852,
+      "execution-time": 855.7249753475189,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/4015-tensorflowlite-resnet_v2_50_weights-bd8-crc_subset-d72ab30",
+      "name": "4015-tensorflowlite-resnet_v2_50_weights-bd8-crc_subset-d72ab30",
+      "result": "PASS"
+    },
+    "0b793796865a884e29fd76acfd65b3fe": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 684.5246376991272,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/105-tensorflow-resnet_v1_50-bd8-crc_subset-a01f37b",
+      "name": "105-tensorflow-resnet_v1_50-bd8-crc_subset-a01f37b",
+      "result": "PASS"
+    },
+    "0e759971bac9351d5c3464017e7e57fc": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 6510.331931114197,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/1339-tensorflow-nasnet_a_large-bd8-crc_subset-305a1ad",
+      "name": "1339-tensorflow-nasnet_a_large-bd8-crc_subset-305a1ad",
+      "result": "PASS"
+    },
+    "1091adac86fcc8a475e16af302cf5a8a": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 241.69303941726685,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/2005-tensorflow-mobilenet_v1_1.0_224-bd8-crc_subset-e752068",
+      "name": "2005-tensorflow-mobilenet_v1_1.0_224-bd8-crc_subset-e752068",
+      "result": "PASS"
+    },
+    "12da7e0a182e0e300e7453dc3360cb92": {
+      "creation-date": 1593142423.142852,
+      "execution-time": 1179.4846336841583,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/4010-tensorflowlite-resnet_v1_101_weights-bd8-crc_subset-de83fb8",
+      "name": "4010-tensorflowlite-resnet_v1_101_weights-bd8-crc_subset-de83fb8",
+      "result": "PASS"
+    },
+    "12f6c6cc1780c8de51e4909c81eb589d": {
+      "creation-date": 1593142423.142852,
+      "execution-time": 245.32593822479248,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/4006-tensorflowlite-mobilenet_v2_1.0_224_weights-bd8-crc_subset-7184958",
+      "name": "4006-tensorflowlite-mobilenet_v2_1.0_224_weights-bd8-crc_subset-7184958",
+      "result": "PASS"
+    },
+    "15269f2b0417c86fa7bbe33f5d7d4b46": {
+      "creation-date": 1593142423.142852,
+      "execution-time": 1021.6024470329285,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/4003-tensorflowlite-inception_v3_weights-bd8-crc_subset-3aa2297",
+      "name": "4003-tensorflowlite-inception_v3_weights-bd8-crc_subset-3aa2297",
+      "result": "PASS"
+    },
+    "17586ab5f37621daf6a9ad6744db2035": {
+      "creation-date": 1592928489.714534,
+      "error-id": "ebe4dbf165e22a0d6bb2c66eb125fe8f",
+      "execution-time": 8.735583305358887,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/3001-darknet-alexnet_darknet-bd8-crc_subset-ba59151",
+      "name": "3001-darknet-alexnet_darknet-bd8-crc_subset-ba59151",
+      "result": "FAIL"
+    },
+    "195f9b0ecbf6b981dd94053ac35af723": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 1950.3270378112793,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/355-tensorflow-savedmodel-savedmodel_xception-bd8-crc_subset-6bd90c2",
+      "name": "355-tensorflow-savedmodel-savedmodel_xception-bd8-crc_subset-6bd90c2",
+      "result": "PASS"
+    },
+    "19e734500fc24ed0c36eb071a5e9e0cb": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 1742.710620880127,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/58-tensorflow-pose_estimation_mobilenet_thin_432x368-bd8-crc_subset-d783544",
+      "name": "58-tensorflow-pose_estimation_mobilenet_thin_432x368-bd8-crc_subset-d783544",
+      "result": "PASS"
+    },
+    "1a555f815efc14e798f632ecba48999d": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 449.85832691192627,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/2011-tensorflow-pnasnet_5_mobile-bd8-crc_subset-f886a99",
+      "name": "2011-tensorflow-pnasnet_5_mobile-bd8-crc_subset-f886a99",
+      "result": "PASS"
+    },
+    "1bc8c46fc2126ae76ade31dd5ceed928": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 1873.4920272827148,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/343-tensorflow-savedmodel-savedmodel_densenet169-bd8-crc_subset-f8303cf",
+      "name": "343-tensorflow-savedmodel-savedmodel_densenet169-bd8-crc_subset-f8303cf",
+      "result": "PASS"
+    },
+    "25d1c23758bf722ae838669b12773ddc": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 163.7371916770935,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/1385-tensorflow-shufflenet_v2-bd8-crc_subset-0bb64d9",
+      "name": "1385-tensorflow-shufflenet_v2-bd8-crc_subset-0bb64d9",
+      "result": "PASS"
+    },
+    "26bd04e48c9149bf5ac48452178c8406": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 1560.5001876354218,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/111-tensorflow-resnet_v2_101-bd8-crc_subset-bf68b1c",
+      "name": "111-tensorflow-resnet_v2_101-bd8-crc_subset-bf68b1c",
+      "result": "PASS"
+    },
+    "282916276d0699f485f7037e1084fc3d": {
+      "creation-date": 1593142423.142852,
+      "execution-time": 6826.6530973911285,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/4007-tensorflowlite-nasnet_a_large_weights-bd8-crc_subset-7c4a8fb",
+      "name": "4007-tensorflowlite-nasnet_a_large_weights-bd8-crc_subset-7c4a8fb",
+      "result": "PASS"
+    },
+    "292d9cd1a7cfc46860134e1c41a30347": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 1244.9324588775635,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/1494-onnx-resnet101_imagenet_caff-bd8-crc_subset-731d05b",
+      "name": "1494-onnx-resnet101_imagenet_caff-bd8-crc_subset-731d05b",
+      "result": "PASS"
+    },
+    "2c58bcdfb3bed671bd798dfe9a056303": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 4751.045083522797,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/310-tensorflow-cruise_kittiseg_resnet50_surgery_384x1248-bd8-crc_subset-c976e4b",
+      "name": "310-tensorflow-cruise_kittiseg_resnet50_surgery_384x1248-bd8-crc_subset-c976e4b",
+      "result": "PASS"
+    },
+    "2e407608bf18c19fd61f315ff0e467a4": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 753.9787209033966,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/322-tensorflow-cruise_kittiseg_resnet50_surgery_3000x1248_without_preprocess_reshape-bd8-crc_subset-15e8302",
+      "name": "322-tensorflow-cruise_kittiseg_resnet50_surgery_3000x1248_without_preprocess_reshape-bd8-crc_subset-15e8302",
+      "result": "PASS"
+    },
+    "2ef013d513de6a86a74091576f5fb3a4": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 237.97105383872986,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/292-tensorflow-cruise_mobilenet_v1-bd8-crc_subset-a3381b6",
+      "name": "292-tensorflow-cruise_mobilenet_v1-bd8-crc_subset-a3381b6",
+      "result": "PASS"
+    },
+    "2f5a12b423352daac5f853f76c71e91e": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 287.43536138534546,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/1675-tensorflowlite-inception_v1_224_quan-bd8-crc_subset-e78c93f",
+      "name": "1675-tensorflowlite-inception_v1_224_quan-bd8-crc_subset-e78c93f",
+      "result": "PASS"
+    },
+    "2faf4d4073425ae8f0f8e91f2aea0718": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 815.378847360611,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/2018-tensorflow-resnet_v2_50-bd8-crc_subset-c6d25d3",
+      "name": "2018-tensorflow-resnet_v2_50-bd8-crc_subset-c6d25d3",
+      "result": "PASS"
+    },
+    "300979a8bed79abecf0aaf99437cb5b7": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 2617.8604321479797,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/1500-onnx-vgg19_imagenet_caff-bd8-crc_subset-f9f1000",
+      "name": "1500-onnx-vgg19_imagenet_caff-bd8-crc_subset-f9f1000",
+      "result": "PASS"
+    },
+    "37019038836e001794d12e6500c67364": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 2281.528844356537,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/2019-tensorflow-vgg16-bd8-crc_subset-d698c78",
+      "name": "2019-tensorflow-vgg16-bd8-crc_subset-d698c78",
+      "result": "PASS"
+    },
+    "38317716d6e48d5cc027f6296bc71877": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 237.81768608093262,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/2006-tensorflow-mobilenet_v1_1.0_224_quant-bd8-crc_subset-1d9fa74",
+      "name": "2006-tensorflow-mobilenet_v1_1.0_224_quant-bd8-crc_subset-1d9fa74",
+      "result": "PASS"
+    },
+    "3d901838ebf0b0babe871bccb0085b0f": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 4804.552323579788,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/313-tensorflow-cruise_kittiseg_resnet50_surgery_384x1248_without_preprocess-bd8-crc_subset-96b1b3b",
+      "name": "313-tensorflow-cruise_kittiseg_resnet50_surgery_384x1248_without_preprocess-bd8-crc_subset-96b1b3b",
+      "result": "PASS"
+    },
+    "3e03de36f4eeb39de4c9ef053cc08827": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 103.6028962135315,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/75-tensorflow-deepspeech_v1_dependent-bd8-crc_subset-9ffa09e",
+      "name": "75-tensorflow-deepspeech_v1_dependent-bd8-crc_subset-9ffa09e",
+      "result": "PASS"
+    },
+    "3e74667721b200a1805265f825b4b532": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 1450.8028311729431,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/153-onnx-arcface-bd8-crc_subset-624d2ad",
+      "name": "153-onnx-arcface-bd8-crc_subset-624d2ad",
+      "result": "PASS"
+    },
+    "3fcda6120873e6c92ddb16a896a84a62": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 546.9374346733093,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/352-tensorflow-savedmodel-savedmodel_nasnet_mobile-bd8-crc_subset-05b3646",
+      "name": "352-tensorflow-savedmodel-savedmodel_nasnet_mobile-bd8-crc_subset-05b3646",
+      "result": "PASS"
+    },
+    "40a76a634479318f9d6de7e25cb37524": {
+      "creation-date": 1593142423.142852,
+      "execution-time": 402.41055178642273,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/4002-tensorflowlite-inception_v2_weights-bd8-crc_subset-f71f4b7",
+      "name": "4002-tensorflowlite-inception_v2_weights-bd8-crc_subset-f71f4b7",
+      "result": "PASS"
+    },
+    "413823eec6424298b5befbedc28ac884": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 305.8629524707794,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/2001-tensorflow-inception_v1-bd8-crc_subset-75886be",
+      "name": "2001-tensorflow-inception_v1-bd8-crc_subset-75886be",
+      "result": "PASS"
+    },
+    "4169a67687ec4c50c18094db1f9ff17c": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 1562.7354164123535,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/2016-tensorflow-resnet_v2_101-bd8-crc_subset-57c273b",
+      "name": "2016-tensorflow-resnet_v2_101-bd8-crc_subset-57c273b",
+      "result": "PASS"
+    },
+    "41fb08eb6663eed27b85dc2884bf0df9": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 994.7564368247986,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/104-tensorflow-inception_v3-bd8-crc_subset-d6f1b3e",
+      "name": "104-tensorflow-inception_v3-bd8-crc_subset-d6f1b3e",
+      "result": "PASS"
+    },
+    "42fc9c161f06c4ee5cefe03166885464": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 213.51016783714294,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/96-tensorflow-traditional_vision_sobel_imgtech-bd8-crc_subset-b6f1322",
+      "name": "96-tensorflow-traditional_vision_sobel_imgtech-bd8-crc_subset-b6f1322",
+      "result": "PASS"
+    },
+    "457a8cf1b0b0f9d3ed419226b4484a47": {
+      "creation-date": 1592489170.163124,
+      "execution-time": 433.3446056842804,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/116-tensorflowlite-ssd_mobilenet_v2_quantized_coco_2018_09_14_300x300_feature_extract-bd8-crc_subset-817173d",
+      "name": "116-tensorflowlite-ssd_mobilenet_v2_quantized_coco_2018_09_14_300x300_feature_extract-bd8-crc_subset-817173d",
+      "result": "PASS"
+    },
+    "45bca4a5f339962719a48bdbb756f641": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 996.9648489952087,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/102-tensorflowlite-inception_v3_q8a-bd8-crc_subset-aef738e",
+      "name": "102-tensorflowlite-inception_v3_q8a-bd8-crc_subset-aef738e",
+      "result": "PASS"
+    },
+    "461aac00c07bae5e395a7c3eb286a710": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 748.4398121833801,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/2408-tensorflow-alexnet-bd8-crc_subset-61bfc68",
+      "name": "2408-tensorflow-alexnet-bd8-crc_subset-61bfc68",
+      "result": "PASS"
+    },
+    "46a7ee610b7338cf10adb2c47f949e9c": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 2696.8122901916504,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/354-tensorflow-savedmodel-savedmodel_vgg19-bd8-crc_subset-d9001fd",
+      "name": "354-tensorflow-savedmodel-savedmodel_vgg19-bd8-crc_subset-d9001fd",
+      "result": "PASS"
+    },
+    "47e40fe43251d08cdf51efb78bb93389": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 399.63422417640686,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/2002-tensorflow-inception_v2-bd8-crc_subset-87d2da1",
+      "name": "2002-tensorflow-inception_v2-bd8-crc_subset-87d2da1",
+      "result": "PASS"
+    },
+    "49c824d5ba7592ae9b2313a9cac94044": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 3070.9673545360565,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/2712-onnx-paddle-bd8-crc_subset-00fc199",
+      "name": "2712-onnx-paddle-bd8-crc_subset-00fc199",
+      "result": "PASS"
+    },
+    "4c4cc19941e9560cf4ff9e587de4a342": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 1057.9274106025696,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/349-tensorflow-savedmodel-savedmodel_inception_v3-bd8-crc_subset-68e4349",
+      "name": "349-tensorflow-savedmodel-savedmodel_inception_v3-bd8-crc_subset-68e4349",
+      "result": "PASS"
+    },
+    "4ff97eedd6229949150b8fde2a3940e4": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 648.1551306247711,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/1261-tensorflow-dense_preproc_removed-bd8-crc_subset-90e4e85",
+      "name": "1261-tensorflow-dense_preproc_removed-bd8-crc_subset-90e4e85",
+      "result": "PASS"
+    },
+    "5040bafe6cab3b999b9b00abf49558f8": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 438.6987338066101,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/21101-tensorflow-mobile_nasnet-bd8-crc_subset-b3ce3e1",
+      "name": "21101-tensorflow-mobile_nasnet-bd8-crc_subset-b3ce3e1",
+      "result": "PASS"
+    },
+    "52f32ab9f5992502b6989a8b27781cd3": {
+      "creation-date": 1592928489.714534,
+      "error-id": "ebe4dbf165e22a0d6bb2c66eb125fe8f",
+      "execution-time": 10.826744794845581,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/3000-darknet-darknet_yolov2-bd8-crc_subset-5556c6e",
+      "name": "3000-darknet-darknet_yolov2-bd8-crc_subset-5556c6e",
+      "result": "FAIL"
+    },
+    "533f1388537932aa38ccd58de581850a": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 1027.5112578868866,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/2003-tensorflow-inception_v3-bd8-crc_subset-1ca5bbc",
+      "name": "2003-tensorflow-inception_v3-bd8-crc_subset-1ca5bbc",
+      "result": "PASS"
+    },
+    "53a42116091ffe3c8ee109f8e8f7033b": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 253.5965359210968,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/107-tensorflowlite-mobilenet_v2_1.0-bd8-crc_subset-197362f",
+      "name": "107-tensorflowlite-mobilenet_v2_1.0-bd8-crc_subset-197362f",
+      "result": "PASS"
+    },
+    "567d31707fa29a0301ab95f289c19564": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 13555.337151288986,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/328-tensorflow-cruise_kittiseg_vgg16_pool5_surgery_384x1248-bd8-crc_subset-a448667",
+      "name": "328-tensorflow-cruise_kittiseg_vgg16_pool5_surgery_384x1248-bd8-crc_subset-a448667",
+      "result": "PASS"
+    },
+    "5ad616183428e46bf0c1563182cb4609": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 1670.2123093605042,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/103-tensorflow-resnet_v1_152-bd8-crc_subset-f2ca0b0",
+      "name": "103-tensorflow-resnet_v1_152-bd8-crc_subset-f2ca0b0",
+      "result": "PASS"
+    },
+    "5c0e0d23619645a141bef98761f790ba": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 793.4537446498871,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/48-tensorflow-ssd_inception_v2_coco_2017_11_17_feature_extract-bd8-crc_subset-8c1fb1b",
+      "name": "48-tensorflow-ssd_inception_v2_coco_2017_11_17_feature_extract-bd8-crc_subset-8c1fb1b",
+      "result": "PASS"
+    },
+    "5ca3790177a948c936ed16afbc908fcf": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 1986.8127536773682,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/2004-tensorflow-inception_v4-bd8-crc_subset-a9cd238",
+      "name": "2004-tensorflow-inception_v4-bd8-crc_subset-a9cd238",
+      "result": "PASS"
+    },
+    "5cb224b663d14cbb6a1d1f148adc38b0": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 708.3328812122345,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/1498-onnx-resnet50_imagenet_caff-bd8-crc_subset-917d9b0",
+      "name": "1498-onnx-resnet50_imagenet_caff-bd8-crc_subset-917d9b0",
+      "result": "PASS"
+    },
+    "5d44bdc5aa9c2839936949dde0bd678b": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 1732.3401312828064,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/1496-onnx-resnet152_imagenet_caff-bd8-crc_subset-cb780b0",
+      "name": "1496-onnx-resnet152_imagenet_caff-bd8-crc_subset-cb780b0",
+      "result": "PASS"
+    },
+    "5f552da5a74b16383e590453b70489dd": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 1211.5237619876862,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/106-tensorflow-resnet_v1_101-bd8-crc_subset-605d648",
+      "name": "106-tensorflow-resnet_v1_101-bd8-crc_subset-605d648",
+      "result": "PASS"
+    },
+    "614be307ed157ed0c3d81a65dfc65492": {
+      "creation-date": 1593142423.142852,
+      "execution-time": 322.0736713409424,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/4001-tensorflowlite-inception_v1_weights-bd8-crc_subset-90c89bd",
+      "name": "4001-tensorflowlite-inception_v1_weights-bd8-crc_subset-90c89bd",
+      "result": "PASS"
+    },
+    "63b9996c6adc716e6a7f42a647c05d9f": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 239.6051630973816,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/92-tensorflowlite-mobilenet_v2_1.0_224_quant-bd8-crc_subset-06fb47a",
+      "name": "92-tensorflowlite-mobilenet_v2_1.0_224_quant-bd8-crc_subset-06fb47a",
+      "result": "PASS"
+    },
+    "6f08dccdb6331192d4419f6cf63c2b4d": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 4760.473996639252,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/314-tensorflow-cruise_kittiseg_resnet50_surgery_384x1248_without_preprocess_reshape-bd8-crc_subset-2cf4266",
+      "name": "314-tensorflow-cruise_kittiseg_resnet50_surgery_384x1248_without_preprocess_reshape-bd8-crc_subset-2cf4266",
+      "result": "PASS"
+    },
+    "70d0fffb6d55da9709a7aa2149deb80a": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 2350.579267978668,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/2017-tensorflow-resnet_v2_152-bd8-crc_subset-5ab39f1",
+      "name": "2017-tensorflow-resnet_v2_152-bd8-crc_subset-5ab39f1",
+      "result": "PASS"
+    },
+    "73f25c34db48b42dceb9b5cadefc7b09": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 479.0833921432495,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/123-tensorflow-facenet_inception_resnet_v1_batch_size_1-bd8-crc_subset-30b576b",
+      "name": "123-tensorflow-facenet_inception_resnet_v1_batch_size_1-bd8-crc_subset-30b576b",
+      "result": "PASS"
+    },
+    "771cf61ec0049f0257ff668f1001603c": {
+      "creation-date": 1592519328.994195,
+      "error-id": "ebe4dbf165e22a0d6bb2c66eb125fe8f",
+      "execution-time": 13.09505820274353,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/383-darknet-darknet_yolo-bd8-crc_subset-71c12b1",
+      "name": "383-darknet-darknet_yolo-bd8-crc_subset-71c12b1",
+      "result": "FAIL"
+    },
+    "7da5114dd7e1da2bd4a90fbad81665f4": {
+      "creation-date": 1592928489.714534,
+      "error-id": "ebe4dbf165e22a0d6bb2c66eb125fe8f",
+      "execution-time": 6.812218427658081,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/3002-darknet-darknet-bd8-crc_subset-7b16d3e",
+      "name": "3002-darknet-darknet-bd8-crc_subset-7b16d3e",
+      "result": "FAIL"
+    },
+    "7eed759e60ab123b66b2c7b24886a3c6": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 744.8444752693176,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/347-paddlepaddle-alexnet-bd8-crc_subset-92a3efe",
+      "name": "347-paddlepaddle-alexnet-bd8-crc_subset-92a3efe",
+      "result": "PASS"
+    },
+    "7f10a5852ae09fc47aa0aed167f90d40": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 1070.4812273979187,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/52-tensorflow-srgan_1.2_640x480_to_2560x1920-bd8-crc_subset-c25502b",
+      "name": "52-tensorflow-srgan_1.2_640x480_to_2560x1920-bd8-crc_subset-c25502b",
+      "result": "PASS"
+    },
+    "7f223d75f8c23a1c1d620fc81390941e": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 1285.6769545078278,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/338-tensorflow-facenet_inception_resnet_v1_batch_size_4-bd8-crc_subset-b898f84",
+      "name": "338-tensorflow-facenet_inception_resnet_v1_batch_size_4-bd8-crc_subset-b898f84",
+      "result": "PASS"
+    },
+    "802650d802d0f18ac5727b6cc3dd4f42": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 999.4178113937378,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/1661-tensorflow-inception_v3_aii-bd8-crc_subset-bcab5a4",
+      "name": "1661-tensorflow-inception_v3_aii-bd8-crc_subset-bcab5a4",
+      "result": "PASS"
+    },
+    "80eb8d8c80bfc583db684b5597c1c7a2": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 1959.656327009201,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/109-tensorflow-inception_v4-bd8-crc_subset-a5ff7c7",
+      "name": "109-tensorflow-inception_v4-bd8-crc_subset-a5ff7c7",
+      "result": "PASS"
+    },
+    "847217b735f96104d877d2a3da587141": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 232.08378410339355,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/77-tensorflowlite-mobilenet_v1_1.0_224_quant-bd8-crc_subset-16d65d8",
+      "name": "77-tensorflowlite-mobilenet_v1_1.0_224_quant-bd8-crc_subset-16d65d8",
+      "result": "PASS"
+    },
+    "85faaf4ccee97ecf554bd1275b09d681": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 2652.9942815303802,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/25-tensorflow-inception_resnet_v2-bd8-crc_subset-47bc616",
+      "name": "25-tensorflow-inception_resnet_v2-bd8-crc_subset-47bc616",
+      "result": "PASS"
+    },
+    "87cdc7c268ddadd2d5157f65ad215fc8": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 9344.533552408218,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/368-tensorflow-ssd_resnet34_cruise_1200_600-bd8-crc_subset-6278fc4",
+      "name": "368-tensorflow-ssd_resnet34_cruise_1200_600-bd8-crc_subset-6278fc4",
+      "result": "PASS"
+    },
+    "8a39c719be6d97b8626948dff09da063": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 2289.4832360744476,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/353-tensorflow-savedmodel-savedmodel_vgg16-bd8-crc_subset-36b7cab",
+      "name": "353-tensorflow-savedmodel-savedmodel_vgg16-bd8-crc_subset-36b7cab",
+      "result": "PASS"
+    },
+    "8b81eac14e55219f465f9e8fabe0c065": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 2648.366815328598,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/2000-tensorflow-inception_resnet_v2-bd8-crc_subset-70b4a3c",
+      "name": "2000-tensorflow-inception_resnet_v2-bd8-crc_subset-70b4a3c",
+      "result": "PASS"
+    },
+    "908f219d10c02c2ddabfa6f5c4298b5e": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 776.5428991317749,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/293-tensorflow-cruise_resnet_v1.5_50-bd8-crc_subset-0eb3cdf",
+      "name": "293-tensorflow-cruise_resnet_v1.5_50-bd8-crc_subset-0eb3cdf",
+      "result": "PASS"
+    },
+    "940fe2f973c05330a9cf27b50beeb668": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 2686.5429170131683,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/272-tensorflowlite-inception_face_ai_benchmark_v3.0.2-bd8-crc_subset-06fd1f1",
+      "name": "272-tensorflowlite-inception_face_ai_benchmark_v3.0.2-bd8-crc_subset-06fd1f1",
+      "result": "PASS"
+    },
+    "957fc5f63a180440543da595587cfd89": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 4911.038601160049,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/366-tensorflow-ssd_resnet34_cruise_600_600-bd8-crc_subset-719bff8",
+      "name": "366-tensorflow-ssd_resnet34_cruise_600_600-bd8-crc_subset-719bff8",
+      "result": "PASS"
+    },
+    "96b724608652ecee82139d7e35b503e3": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 925.1050550937653,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/345-tensorflow-savedmodel-savedmodel_densenet121-bd8-crc_subset-5541805",
+      "name": "345-tensorflow-savedmodel-savedmodel_densenet121-bd8-crc_subset-5541805",
+      "result": "PASS"
+    },
+    "96de6029ab68e26cc256016ecefd1636": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 687.6154141426086,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/2014-tensorflow-resnet_v1_50-bd8-crc_subset-39d740b",
+      "name": "2014-tensorflow-resnet_v1_50-bd8-crc_subset-39d740b",
+      "result": "PASS"
+    },
+    "9870ca463e1139ac844920b85df8e152": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 1735.0305571556091,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/2013-tensorflow-resnet_v1_152-bd8-crc_subset-1ec3ee5",
+      "name": "2013-tensorflow-resnet_v1_152-bd8-crc_subset-1ec3ee5",
+      "result": "PASS"
+    },
+    "995aba652fffcf5a2f207a12fced126c": {
+      "creation-date": 1592489170.163124,
+      "execution-time": 157.97256469726562,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/73-tensorflow-shufflenet-bd8-crc_subset-2fdb4f7",
+      "name": "73-tensorflow-shufflenet-bd8-crc_subset-2fdb4f7",
+      "result": "PASS"
+    },
+    "9f1dc0563cd2750ff6ed440448f57ce4": {
+      "creation-date": 1593142423.142852,
+      "error-id": "1be3eb436d6acabf818d559db373d949",
+      "execution-time": 31.687016010284424,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/384-tensorflow-deeplabv3_demo_300x300-bd8-crc_subset-b307473",
+      "name": "384-tensorflow-deeplabv3_demo_300x300-bd8-crc_subset-b307473",
+      "result": "FAIL"
+    },
+    "a0913537f250c083e8a510829d7761c5": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 374.8953866958618,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/294-onnx-cruise_inception_v2-bd8-crc_subset-3bd7b32",
+      "name": "294-onnx-cruise_inception_v2-bd8-crc_subset-3bd7b32",
+      "result": "PASS"
+    },
+    "a1ddc2d21d32f1991caf73b17bd0cf3f": {
+      "creation-date": 1592928489.714534,
+      "error-id": "ebe4dbf165e22a0d6bb2c66eb125fe8f",
+      "execution-time": 7.751014947891235,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/3004-darknet-darknet19_448-bd8-crc_subset-a6cfa31",
+      "name": "3004-darknet-darknet19_448-bd8-crc_subset-a6cfa31",
+      "result": "FAIL"
+    },
+    "a264be2fd437c182bc12ade460ecf161": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 528.464757680893,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/117-tensorflow-ssd_mobilenetv2_coco_2018_03_29_300x300_feature_extract-bd8-crc_subset-46ee468",
+      "name": "117-tensorflow-ssd_mobilenetv2_coco_2018_03_29_300x300_feature_extract-bd8-crc_subset-46ee468",
+      "result": "PASS"
+    },
+    "a330deae75096135e9caf98e03db57e4": {
+      "creation-date": 1593142423.142852,
+      "execution-time": 226.31174635887146,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/4005-tensorflowlite-mobilenet_v1_1.0_224_weights-bd8-crc_subset-5f3b2cc",
+      "name": "4005-tensorflowlite-mobilenet_v1_1.0_224_weights-bd8-crc_subset-5f3b2cc",
+      "result": "PASS"
+    },
+    "a5d4cfacb831acff7506999840e9aad4": {
+      "creation-date": 1593142423.142852,
+      "execution-time": 2443.5749332904816,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/4014-tensorflowlite-resnet_v2_152_weights-bd8-crc_subset-6ed9b08",
+      "name": "4014-tensorflowlite-resnet_v2_152_weights-bd8-crc_subset-6ed9b08",
+      "result": "PASS"
+    },
+    "a63c866786c58e31b00499d7ab09ba31": {
+      "creation-date": 1592519328.994195,
+      "error-id": "75d73d464ec3d2fd39a8493ba28a6d9c",
+      "execution-time": 3357.102678537369,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/289-tensorflow-ricoh_srgan32ch-bd8-crc_subset-f8a7128",
+      "name": "289-tensorflow-ricoh_srgan32ch-bd8-crc_subset-f8a7128",
+      "result": "FAIL"
+    },
+    "a72c46764ee8812dde4f7cdc380bafb9": {
+      "creation-date": 1592489170.163124,
+      "execution-time": 5316.71567940712,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/138-tensorflow-object_detection-bd8-crc_subset-edfeb20",
+      "name": "138-tensorflow-object_detection-bd8-crc_subset-edfeb20",
+      "result": "PASS"
+    },
+    "abcc8bdb0ef0554c35d02685d8052980": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 8209.46376132965,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/2728-tensorflowlite-lanenet-bd8-crc_subset-91c811d",
+      "name": "2728-tensorflowlite-lanenet-bd8-crc_subset-91c811d",
+      "result": "PASS"
+    },
+    "b130839f2eeae202c6d7c7ed963abe72": {
+      "creation-date": 1593142423.142852,
+      "execution-time": 6615.064541578293,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/4009-tensorflowlite-pnasnet_5_large_weights-bd8-crc_subset-aa27a3d",
+      "name": "4009-tensorflowlite-pnasnet_5_large_weights-bd8-crc_subset-aa27a3d",
+      "result": "PASS"
+    },
+    "b25f2d436e9e194041edd35f1f1be344": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 397.04761958122253,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/1676-tensorflowlite-inception_v2_224_quan-bd8-crc_subset-7101aca",
+      "name": "1676-tensorflowlite-inception_v2_224_quan-bd8-crc_subset-7101aca",
+      "result": "PASS"
+    },
+    "b5f1eb3f017a779081bc6629626d687c": {
+      "creation-date": 1593142423.142852,
+      "execution-time": 2604.6610209941864,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/4000-tensorflowlite-inception_resnet_v2_weights-bd8-crc_subset-3e5f5e8",
+      "name": "4000-tensorflowlite-inception_resnet_v2_weights-bd8-crc_subset-3e5f5e8",
+      "result": "PASS"
+    },
+    "b9a71a23e43047fbb3f5d5a7df33d11c": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 466.28025007247925,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/93-tensorflow-ssdlite_mobilenetv2_feature_extract-bd8-crc_subset-a35dbc3",
+      "name": "93-tensorflow-ssdlite_mobilenetv2_feature_extract-bd8-crc_subset-a35dbc3",
+      "result": "PASS"
+    },
+    "ba75d517bae257dc20b349b1151a4e97": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 1227.149864435196,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/2012-tensorflow-resnet_v1_101-bd8-crc_subset-f3c4e7a",
+      "name": "2012-tensorflow-resnet_v1_101-bd8-crc_subset-f3c4e7a",
+      "result": "PASS"
+    },
+    "ba9116e5b4fdfd7714344cdcd0ea069f": {
+      "creation-date": 1592519328.994195,
+      "error-id": "60a7065bef9100096bc8d595da832633",
+      "execution-time": 14.836585521697998,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/2707-tensorflowlite-vdsr_41_20_layer-bd8-crc_subset-2656d60",
+      "name": "2707-tensorflowlite-vdsr_41_20_layer-bd8-crc_subset-2656d60",
+      "result": "FAIL"
+    },
+    "c06935e4b9f9b1cfcf60fd2a21a58dfc": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 1204.0049331188202,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/269-tensorflowlite-inception_v3_ai_benchmark_v3.0.2-bd8-crc_subset-531c8f2",
+      "name": "269-tensorflowlite-inception_v3_ai_benchmark_v3.0.2-bd8-crc_subset-531c8f2",
+      "result": "PASS"
+    },
+    "c0fe8b01718da00295bdffa8abac7423": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 1961.578566789627,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/1677-tensorflowlite-inception_v4_299_quan-bd8-crc_subset-f52813f",
+      "name": "1677-tensorflowlite-inception_v4_299_quan-bd8-crc_subset-f52813f",
+      "result": "PASS"
+    },
+    "c11d32ac871c32fd27778ffbcf8e71c8": {
+      "creation-date": 1592928489.714534,
+      "error-id": "ebe4dbf165e22a0d6bb2c66eb125fe8f",
+      "execution-time": 7.929862976074219,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/3003-darknet-darknet19-bd8-crc_subset-29942da",
+      "name": "3003-darknet-darknet19-bd8-crc_subset-29942da",
+      "result": "FAIL"
+    },
+    "c2a1710c5145b831c8643887464a6c5c": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 2248.1309475898743,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/339-tensorflow-facenet_inception_resnet_v1_batch_size_8-bd8-crc_subset-71da2b2",
+      "name": "339-tensorflow-facenet_inception_resnet_v1_batch_size_8-bd8-crc_subset-71da2b2",
+      "result": "PASS"
+    },
+    "c839fab86cf88942d8bd403689cb95b6": {
+      "creation-date": 1593142423.142852,
+      "execution-time": 2044.7904860973358,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/4004-tensorflowlite-inception_v4_weights-bd8-crc_subset-cd473f2",
+      "name": "4004-tensorflowlite-inception_v4_weights-bd8-crc_subset-cd473f2",
+      "result": "PASS"
+    },
+    "c9d335ebc9561d2db1139b7283711553": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 6468.749209165573,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/2008-tensorflow-nasnet_a_large-bd8-crc_subset-d0f71cb",
+      "name": "2008-tensorflow-nasnet_a_large-bd8-crc_subset-d0f71cb",
+      "result": "PASS"
+    },
+    "cb269000dbdbb967e6b486472040e758": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 439.287353515625,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/49-tensorflow-ssd_mobilenet_v1_coco_2017_11_17_feature_extract-bd8-crc_subset-009b825",
+      "name": "49-tensorflow-ssd_mobilenet_v1_coco_2017_11_17_feature_extract-bd8-crc_subset-009b825",
+      "result": "PASS"
+    },
+    "cd30b0118624d2e5a25b92837779fd2a": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 457.07041096687317,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/2009-tensorflow-nasnet_a_mobile-bd8-crc_subset-f844ac3",
+      "name": "2009-tensorflow-nasnet_a_mobile-bd8-crc_subset-f844ac3",
+      "result": "PASS"
+    },
+    "cd3f52952fcecc4ed96b253cf55823fc": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 6373.408620357513,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/2010-tensorflow-pnasnet_5_large-bd8-crc_subset-495d74c",
+      "name": "2010-tensorflow-pnasnet_5_large-bd8-crc_subset-495d74c",
+      "result": "PASS"
+    },
+    "cddcb14a184bde12bebcbad5f8831cee": {
+      "creation-date": 1592519328.994195,
+      "error-id": "75d73d464ec3d2fd39a8493ba28a6d9c",
+      "execution-time": 404.83745765686035,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/98-tensorflow-ssd_resnetv1_50_fpn_coco_640x640_feature_extract-bd8-crc_subset-4b83803",
+      "name": "98-tensorflow-ssd_resnetv1_50_fpn_coco_640x640_feature_extract-bd8-crc_subset-4b83803",
+      "result": "FAIL"
+    },
+    "ce922ba23972d4f04bb36d4b23ce8d2f": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 147.83405351638794,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/2718-tensorflow-shufflenet_v2_1.0x-bd8-crc_subset-d5ea90b",
+      "name": "2718-tensorflow-shufflenet_v2_1.0x-bd8-crc_subset-d5ea90b",
+      "result": "PASS"
+    },
+    "d0435a592178d582498e49259e9b4ee5": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 732.6606757640839,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/346-tensorflow-savedmodel-savedmodel_resnet50-bd8-crc_subset-43f8c6e",
+      "name": "346-tensorflow-savedmodel-savedmodel_resnet50-bd8-crc_subset-43f8c6e",
+      "result": "PASS"
+    },
+    "d132d7e699d84fbdaa23dde9734d185c": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 15.576647996902466,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/1497-onnx-resnet20_cifar10_cnt-bd8-crc_subset-a568b0a",
+      "name": "1497-onnx-resnet20_cifar10_cnt-bd8-crc_subset-a568b0a",
+      "result": "PASS"
+    },
+    "daf2211f8dc0843457929809cea98b7b": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 1444.6587431430817,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/74-tensorflow-deepspeech_v1_independent-bd8-crc_subset-9c9c646",
+      "name": "74-tensorflow-deepspeech_v1_independent-bd8-crc_subset-9c9c646",
+      "result": "PASS"
+    },
+    "dbd3b5fbb02806d56a218c8cf2324d60": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 6725.998430252075,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/351-tensorflow-savedmodel-savedmodel_nasnet_large-bd8-crc_subset-2767178",
+      "name": "351-tensorflow-savedmodel-savedmodel_nasnet_large-bd8-crc_subset-2767178",
+      "result": "PASS"
+    },
+    "dcd3020571436be1ddaccdc00066169f": {
+      "creation-date": 1593142423.142852,
+      "execution-time": 2602.0692002773285,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/4017-tensorflowlite-vgg_19_weights-bd8-crc_subset-8bd5d09",
+      "name": "4017-tensorflowlite-vgg_19_weights-bd8-crc_subset-8bd5d09",
+      "result": "PASS"
+    },
+    "e35fe6bbca040d3de8260f5a9982a6cd": {
+      "creation-date": 1593142423.142852,
+      "execution-time": 720.2977356910706,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/4012-tensorflowlite-resnet_v1_50_weights-bd8-crc_subset-f261c35",
+      "name": "4012-tensorflowlite-resnet_v1_50_weights-bd8-crc_subset-f261c35",
+      "result": "PASS"
+    },
+    "e37fd6489dee5cd2568896f653b20483": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 9437.26857161522,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/367-tensorflow-ssd_resnet34_cruise_600_1200-bd8-crc_subset-12948f3",
+      "name": "367-tensorflow-ssd_resnet34_cruise_600_1200-bd8-crc_subset-12948f3",
+      "result": "PASS"
+    },
+    "e478d262a08e56176d1732a82e15de61": {
+      "creation-date": 1593142423.142852,
+      "execution-time": 1528.0902030467987,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/4013-tensorflowlite-resnet_v2_101_weights-bd8-crc_subset-c442c8a",
+      "name": "4013-tensorflowlite-resnet_v2_101_weights-bd8-crc_subset-c442c8a",
+      "result": "PASS"
+    },
+    "e8cb443d6df83ff5b770c9074f577425": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 2529.966076374054,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/2020-tensorflow-vgg19-bd8-crc_subset-b769eb3",
+      "name": "2020-tensorflow-vgg19-bd8-crc_subset-b769eb3",
+      "result": "PASS"
+    },
+    "e8d2cc0c0ca8029a6f35f15228eff48b": {
+      "creation-date": 1593142423.142852,
+      "execution-time": 2332.360869407654,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/4016-tensorflowlite-vgg_16_weights-bd8-crc_subset-f6c5d6b",
+      "name": "4016-tensorflowlite-vgg_16_weights-bd8-crc_subset-f6c5d6b",
+      "result": "PASS"
+    },
+    "e9aaf9fb1fc53ab10e7fb622abb063b2": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 353.59792971611023,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/2007-tensorflow-mobilenet_v2_1.4_224-bd8-crc_subset-36dc020",
+      "name": "2007-tensorflow-mobilenet_v2_1.4_224-bd8-crc_subset-36dc020",
+      "result": "PASS"
+    },
+    "e9d0655840505f9535caed6479ba61f3": {
+      "creation-date": 1593142423.142852,
+      "execution-time": 1792.0631563663483,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/4011-tensorflowlite-resnet_v1_152_weights-bd8-crc_subset-467944e",
+      "name": "4011-tensorflowlite-resnet_v1_152_weights-bd8-crc_subset-467944e",
+      "result": "PASS"
+    },
+    "ea8c9fe3858ea27493efdbf118ab5bf9": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 227.6459596157074,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/350-tensorflow-savedmodel-savedmodel_mobilenet-bd8-crc_subset-a5a2858",
+      "name": "350-tensorflow-savedmodel-savedmodel_mobilenet-bd8-crc_subset-a5a2858",
+      "result": "PASS"
+    },
+    "eb28b35ae44ae364b96435425b707e32": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 11614.427472352982,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/2730-tensorflow-unet-bd8-crc_subset-baacca3",
+      "name": "2730-tensorflow-unet-bd8-crc_subset-baacca3",
+      "result": "PASS"
+    },
+    "ecc40c2537dec5d9d0a35f754bb47f84": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 4743.685702085495,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/309-tensorflow-cruise_kittiseg_resnet50_surgery-bd8-crc_subset-bbff3d6",
+      "name": "309-tensorflow-cruise_kittiseg_resnet50_surgery-bd8-crc_subset-bbff3d6",
+      "result": "PASS"
+    },
+    "f00b17ae72da4333d2c79aadf0cd6054": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 4777.22323679924,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/268-tensorflowlite-vgg_ai_benchmark_v3.0.2-bd8-crc_subset-1df7538",
+      "name": "268-tensorflowlite-vgg_ai_benchmark_v3.0.2-bd8-crc_subset-1df7538",
+      "result": "PASS"
+    },
+    "f3dc5ad8aeeb436e1c1152f083f0db14": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 233.0967960357666,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/270-tensorflowlite-mobilenet_v2_ai_benchmark_v3.0.2-bd8-crc_subset-e1e5d8d",
+      "name": "270-tensorflowlite-mobilenet_v2_ai_benchmark_v3.0.2-bd8-crc_subset-e1e5d8d",
+      "result": "PASS"
+    },
+    "f4f3782987f5491863d7fef3eb329a15": {
+      "creation-date": 1593142423.142852,
+      "execution-time": 482.32761311531067,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/4008-tensorflowlite-nasnet_a_mobile_weights-bd8-crc_subset-9bec47d",
+      "name": "4008-tensorflowlite-nasnet_a_mobile_weights-bd8-crc_subset-9bec47d",
+      "result": "PASS"
+    },
+    "f64985a5d2d02691ce922691524b9970": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 2417.226933002472,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/112-tensorflow-resnet_v2_152-bd8-crc_subset-79a1e74",
+      "name": "112-tensorflow-resnet_v2_152-bd8-crc_subset-79a1e74",
+      "result": "PASS"
+    },
+    "fac82b8484fe620e0cc0f3a8c90f0e71": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 818.5901250839233,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/110-tensorflow-resnet_v2_50-bd8-crc_subset-318b619",
+      "name": "110-tensorflow-resnet_v2_50-bd8-crc_subset-318b619",
+      "result": "PASS"
+    },
+    "ffd8c3b19fa9a06643b367a6a3b1ed2f": {
+      "creation-date": 1592519328.994195,
+      "execution-time": 2227.226204395294,
+      "location": "/projects/ai.qa/regressions/rel26/aura_cfg157/NNVM-TESTBENCH/NNVM-TESTBENCH-12/tests/1499-onnx-vgg16_imagenet_caff-bd8-crc_subset-b3f9e65",
+      "name": "1499-onnx-vgg16_imagenet_caff-bd8-crc_subset-b3f9e65",
+      "result": "PASS"
+    }
+  }
+}
